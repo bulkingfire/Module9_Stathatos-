@@ -14,7 +14,71 @@ function renderLicenseSection(license) {}
 function generateMarkdown(data) {
   return `# ${data.title}
 
+## Table of Content
+
+- [Description](#description)
+
+- [Requirements](#requirements)
+
+- [Testing](#testing)
+
+- [Usage](#usage)
+
+- [License](#license)
+
+- [Contributors](#contributors)
+
+- [Github](#github)
+
+- [Email](#email)
+
+
+### Description
+${data.Description}
+
+
+### Requirements
+Installation Requirements ${data.Requirements}
+
+
+### Testing
+${data.Testing}
+
+
+
+### Usage
+${data.Usage}
+
+
+
+### License
+${licenseInfo(data.License)}
+
+
+
+
+### Contributors
+${data.Contributors}
+
+
+
+### Github
+[Github Profle](https://github.com/${data.Github})
+
+
+### Email
+If you have any questions here is my email: ${data.Email}
 `;
+}
+
+function licenseBadge(license) {
+  return `![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)`;
+  
+} 
+
+function licenseInfo(license) {
+  return `${licenseBadge(license)}
+  [License Info](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository)`
 }
 
 module.exports = generateMarkdown;

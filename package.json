@@ -1,0 +1,22 @@
+{
+  "name": "package.json",
+  "version": "8.2.4",
+  "description": "inquirer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bulkingfire/Module9_Stathatos-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bulkingfire/Module9_Stathatos-/issues"
+  },
+  "homepage": "https://github.com/bulkingfire/Module9_Stathatos-#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
